@@ -1,0 +1,103 @@
+.box {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  height: 600px;
+  align-items: center;
+  background-color: #084f85;
+  margin: auto;
+  margin-top: 100px;
+}
+.box h1 {
+  margin: auto;
+}
+.first-slider {
+  justify-content: space-evenly;
+  width: 80%;
+}
+.second-slider {
+  justify-content: space-evenly;
+  width: 80%;
+}
+
+.box #first-start-range {
+  text-align: start;
+}
+#first-end-range {
+  text-align: end;
+}
+
+input[type="range"] {
+  width: 400px;
+  background-color: #ffffff;
+}
+input[type="submit"] {
+  border: 0;
+  background: none;
+  box-shadow: none;
+  border-radius: 0px;
+}
+.buttons {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+}
+.cuotasFijas {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.185);
+  padding: 10px;
+  font-size: 2em;
+  justify-content: space-between;
+}
+.cuotasFijas #cFijas {
+  font-size: 1em;
+}
+#cvalor {
+}
+#btn1 {
+  color: #ffffff;
+  padding: 1em;
+  box-shadow: 0px 0px 0px transparent;
+  border: 0px solid transparent;
+  text-shadow: 0px 0px 0px transparent;
+  background-color: #17aa8d;
+}
+#btn1:hover {
+  background: #17aa8d;
+  box-shadow: 0px 0px 0px transparent;
+  border: 0px solid transparent;
+  text-shadow: 0px 0px 0px transparent;
+}
+#btn2 {
+  padding: 0.5em;
+  color: #ffffff;
+  background-color: #1b7eca;
+  box-shadow: 0px 0px 0px transparent;
+  border: 0px solid transparent;
+  text-shadow: 0px 0px 0px transparent;
+}
+#btn2:hover {
+  background: #1b7eca;
+  box-shadow: 0px 0px 0px transparent;
+  border: 0px solid transparent;
+  text-shadow: 0px 0px 0px transparent;
+}
+.textRange {
+  display: flex;
+  font-weight: bold;
+  justify-content: space-between;
+}
+.firstLabel {
+  margin: auto;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.secondLabel {
+  margin: auto;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
