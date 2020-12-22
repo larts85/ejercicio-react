@@ -9,10 +9,6 @@ const Box = () => {
   const [cuotaInput, setCuotaInput] = useState(3)
   const [cuotaSlider, setCuotaSlider] = useState(3)
 
-  const handleCuotas = (num) => {
-    setCuotas(num)
-  }
-
   useEffect(() => {
     setMontoTotal(montoInput)
   }, [montoInput])
@@ -54,8 +50,10 @@ const Box = () => {
           onChange={e => setMontoSlider(e.target.value)}
         />
         <br />
-        <span id='first-start-range'>{`$ 5000`}</span>
-        <span id='first-end-range'>{`$ 50000`}</span>
+        <div className='textRange'>
+          <span className='first-range'>{`$ 5000`}</span>
+          <span className='second-range'>{`$ 50000`}</span>
+        </div>
       </div>
       <div className='second-slider'>
         <div className='secondLabel'>
@@ -79,16 +77,14 @@ const Box = () => {
           onChange={e => setCuotaSlider(e.target.value)}
         />
         <div className='textRange' style={{ flexDirection: 'row' }}>
-          <span className='second-range'>{`3`}</span>
+          <span className='first-range'>{`3`}</span>
           <span className='second-range'>{`24`}</span>
         </div>
       </div>
       <div className='cuotasFijas'>
         <span id='cFijas'>CUOTAS FIJAS POR MES</span>
-        <span id='cValor'>
-          {
-            parseFloat(Math.round((montoTotal / cuotas) * 100) / 100).toFixed(2)
-          }
+        <span id='cValor'>$&nbsp;
+          {parseFloat(Math.round((montoTotal / cuotas) * 100) / 100).toFixed(2)}
         </span>
       </div>
       <div className='buttons'>
